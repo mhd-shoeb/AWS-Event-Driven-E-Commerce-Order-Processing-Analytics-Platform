@@ -77,6 +77,7 @@ Order Worker
 SNS Topic
      ↓
 Notification
+
 6. Caching
 
 ElastiCache/Valkey was used as the caching layer to demonstrate application-side caching and private network connectivity.
@@ -129,6 +130,7 @@ SELECT
     col3 AS status,
     COUNT(*) AS order_count,
     SUM(col2) AS total_amount
+    
 FROM orders_03acf00548cb7ec3c6159db1ddbc9737
 GROUP BY col3
 ORDER BY order_count DESC;
@@ -182,6 +184,7 @@ No passwords or secret values are stored in the repository.
 The analytics bucket was configured with:
 
 Block Public Access → ON
+
 Default Encryption → SSE-S3
 
 This prevents accidental public exposure of the stored data.
