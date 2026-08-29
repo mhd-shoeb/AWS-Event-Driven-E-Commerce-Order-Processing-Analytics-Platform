@@ -20,6 +20,7 @@ Cost-conscious resource management
 <img width="1536" height="1024" alt="AWS-Event-Driven-E-Commerce-Order-Processing-Analytics-Platform" src="https://github.com/user-attachments/assets/469f6470-8960-479e-b2b3-528e5ce11bc4" />
 
 🔄 Order Processing Flow
+
 1. Order Submission
 
 The client sends an order through the API Gateway endpoint.
@@ -131,7 +132,9 @@ SELECT
 FROM orders_03acf00548cb7ec3c6159db1ddbc9737
 GROUP BY col3
 ORDER BY order_count DESC;
+
 🔐 Security Architecture
+
 IAM Least Privilege
 
 The Lambda execution role was configured with AWS-managed and customer-created policies.
@@ -319,6 +322,7 @@ Errors
 Duration
 ConcurrentExecutions
 Throttles
+
 🧠 Key Technical Lessons
 
 This project provided practical experience with:
@@ -361,28 +365,6 @@ Test configuration
 Apply fix
    ↓
 Retest
-📸 Project Screenshots
-
-Recommended screenshot organization:
-
-screenshots/
-├── 01-architecture.png
-├── 02-api-gateway.png
-├── 03-lambda.png
-├── 04-sqs.png
-├── 05-sqs-dlq.png
-├── 06-sns.png
-├── 07-rds.png
-├── 08-elasticache.png
-├── 09-secrets-manager.png
-├── 10-kms.png
-├── 11-s3-security.png
-├── 12-glue.png
-├── 13-athena-validation.png
-├── 14-athena-analytics.png
-└── 15-cloudwatch.png
-
-Never upload screenshots containing passwords, secret values, access keys, tokens, or other credentials.
 
 💰 Cost Management
 
@@ -402,6 +384,7 @@ CloudWatch usage
 S3 storage
 Glue
 KMS requests
+
 🎯 Project Outcome
 
 Successfully built and validated an AWS-based e-commerce processing and analytics platform with:
