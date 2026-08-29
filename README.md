@@ -19,25 +19,6 @@ Cost-conscious resource management
 
 <img width="1536" height="1024" alt="AWS-Event-Driven-E-Commerce-Order-Processing-Analytics-Platform" src="https://github.com/user-attachments/assets/469f6470-8960-479e-b2b3-528e5ce11bc4" />
 
-☁️ AWS Services Used
-Service	Purpose
-Amazon API Gateway	Receives order API requests
-AWS Lambda	Serverless order processing
-Amazon SQS	Asynchronous order queue
-Amazon SQS DLQ	Handles repeatedly failed messages
-Amazon SNS	Order notifications
-Amazon RDS MySQL	Persistent order database
-Amazon ElastiCache / Valkey	Caching layer
-Amazon S3	Data lake / analytics storage
-AWS Glue	Data catalog and crawler
-Amazon Athena	Serverless SQL analytics
-AWS Secrets Manager	Secure database credentials
-AWS KMS	Encryption key management
-Amazon CloudWatch	Logs, metrics and alarms
-AWS IAM	Access control
-Amazon VPC	Network isolation
-Security Groups	Network-level access control
-
 🔄 Order Processing Flow
 1. Order Submission
 
@@ -53,6 +34,7 @@ The API returns an asynchronous success response:
 
 HTTP 202
 Order accepted
+
 2. Queue Processing
 
 The receiver Lambda publishes the order to Amazon SQS.
@@ -84,6 +66,7 @@ MySQL
 The final dataset was validated with:
 
 3,611 orders
+
 5. Notification
 
 After order processing, SNS is used for order notifications.
@@ -128,6 +111,7 @@ Result:
 total_orders
 ------------
 3611
+
 Analytical Query
 
 The Glue crawler generated generic column names for the final table:
