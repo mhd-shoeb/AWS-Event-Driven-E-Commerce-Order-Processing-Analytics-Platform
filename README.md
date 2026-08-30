@@ -100,6 +100,7 @@ Issues were investigated using IAM policies, CloudWatch logs, AWS CLI, service c
 - Athena query returned **3,611 orders**
 - CloudWatch logs and alarms successfully validated
 
+## 📁 Repository Structure
 ```text
 AWS-Event-Driven-E-Commerce-Order-Processing-Analytics-Platform/
 │
