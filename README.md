@@ -207,13 +207,9 @@ Order Queue
           ↓
         DLQ
 
-Maximum receives before moving a message to the DLQ:
+Maximum receives before moving a message to the DLQ: 3
 
-3
-
-The visibility timeout was configured to:
-
-60 seconds
+The visibility timeout was configured to: 60 seconds
 
 This gives the Lambda sufficient time to process messages before they become visible again.
 
