@@ -110,7 +110,7 @@ FROM orders_03acf00548cb7ec3c6159db1ddbc9737;
 
 Result:
 
-total_orders
+TOTAL_ORDERS
 ------------
 3611
 
